@@ -1,0 +1,4 @@
+Verify Copyright Footer
+=======================
+
+This simple test was written as an example of how little automated tests can be used to save time on the manual testin g side.  We had a bug filed this year to update the copyright footer from 2012 to 2012-2013.  This test will ensure the copyright always reflects the current year or it will fail.

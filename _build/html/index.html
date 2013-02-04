@@ -1,0 +1,132 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Welcome to Eucalyptus Console Testing Framework Documentation’s documentation! &mdash; Eucalyptus Console Testing Framework Documentation 1 documentation</title>
+    
+    <link rel="stylesheet" href="_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '',
+        VERSION:     '1',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="top" title="Eucalyptus Console Testing Framework Documentation 1 documentation" href="#" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li><a href="#">Eucalyptus Console Testing Framework Documentation 1 documentation</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="welcome-to-eucalyptus-console-testing-framework-documentation-s-documentation">
+<h1>Welcome to Eucalyptus Console Testing Framework Documentation&#8217;s documentation!<a class="headerlink" href="#welcome-to-eucalyptus-console-testing-framework-documentation-s-documentation" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="overview">
+<h2>Overview<a class="headerlink" href="#overview" title="Permalink to this headline">¶</a></h2>
+<p>The purpose of this test suite is to automatically verify all basic functionality of the Eucalyptus Console UI works properly across different platforms and browsers before each release.</p>
+<p>Most test units are written in Python and use the Standard unittest framework provided there. The tests are executed in the cloud via a Selenium service provided by Sauce Labs.</p>
+<p>Some test units are written in shell as they enable certain UI tests to be performed but don&#8217;t actually use the UI themselves.</p>
+<p>All sequentially numbered tests should be run in proper order as some are pre-requisites of the others.  For instance, an instance must be started before it can be terminated.</p>
+<p>Tests prefixed with 00 may be run in any order before the sequentially numbered tests have been run (none at this time) and those prefixed with 99 may be run in any order after the rest of the tests have completed.</p>
+</div>
+<div class="section" id="individual-test-descriptions">
+<h2>Individual Test Descriptions<a class="headerlink" href="#individual-test-descriptions" title="Permalink to this headline">¶</a></h2>
+<blockquote>
+<div><ul class="simple">
+<li><a class="reference external" href="test-navbar.html">test-01-navBar.py</a></li>
+<li><a class="reference external" href="test-keypairs.html">test-02-keyPairs.py</a></li>
+<li><a class="reference external" href="test-helpdocs.html">test-03-helpTopics.py</a></li>
+<li><a class="reference external" href="test-fetchcreds.html">test-04-fetchCredentials.py</a></li>
+<li><a class="reference external" href="test-fetchkey.html">test-05-fetchKey.sh</a></li>
+<li><a class="reference external" href="test-modifysecgrp.html">test-06-modifySecGrp.py</a></li>
+<li><a class="reference external" href="test-launchinstance.html">test-07-launchInstance.py</a></li>
+<li><a class="reference external" href="test-createvolume.html">test-08-createVolume.py</a></li>
+<li><a class="reference external" href="test-attachvolume.html">test-09-attachVolume.py</a></li>
+<li><a class="reference external" href="test-testvolumes.html">test-10-testVolume.sh</a></li>
+<li><a class="reference external" href="test-detachvolume.html">test-11-detachVolume.py</a></li>
+<li><a class="reference external" href="test-deletevolume.html">test-12-deleteVolume.py</a></li>
+<li><a class="reference external" href="test-addremsecgrp.html">test-13-addRemoveSecGrp.py</a></li>
+<li><a class="reference external" href="test-rebootinstance.html">test-14-rebootInstance.py</a></li>
+<li><a class="reference external" href="test-terminateinstance.html">test-15-terminateInstance.py</a></li>
+<li><a class="reference external" href="test-verifycopyfooter.html">test-99-verifyCopyrightFooter.py</a></li>
+</ul>
+</div></blockquote>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="#">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Welcome to Eucalyptus Console Testing Framework Documentation&#8217;s documentation!</a><ul>
+<li><a class="reference internal" href="#overview">Overview</a></li>
+<li><a class="reference internal" href="#individual-test-descriptions">Individual Test Descriptions</a></li>
+</ul>
+</li>
+</ul>
+
+  <h3>This Page</h3>
+  <ul class="this-page-menu">
+    <li><a href="_sources/index.txt"
+           rel="nofollow">Show Source</a></li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li><a href="#">Eucalyptus Console Testing Framework Documentation 1 documentation</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2013, Brian Thomason.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.1.3.
+    </div>
+  </body>
+</html>
